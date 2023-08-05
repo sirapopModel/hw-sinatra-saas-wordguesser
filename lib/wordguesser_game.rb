@@ -30,6 +30,7 @@ class WordGuesserGame
 
   
   def word_with_guesses
+    @displayed = ""
     for i in 0..(@word.length-1) do
       if guesses.include?(word[i])
         @displayed += word[i]
